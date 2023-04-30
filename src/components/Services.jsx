@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 const Services = () => {
     const [ref, inView] = useInView({
         threshold: 0.5, // 50% of the element visible in viewport
-        triggerOnce: false, // Reset the animation each time the element comes into view
+        triggerOnce: true, // Reset the animation each time the element comes into view
     });
 
     const containerVariants = {

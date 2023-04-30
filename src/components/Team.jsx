@@ -6,8 +6,8 @@ import { useInView } from 'react-intersection-observer';
 const Team = () => {
     const members = [
         {
-            name: "Pradeeshwar",
-            title: "SDE",
+            name: "John Doe",
+            title: "Designer",
             image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
             socials: [
                 { name: "Twitter", url: "https://twitter.com/" },
@@ -16,8 +16,8 @@ const Team = () => {
             ],
         },
         {
-            name: "Pradeeshwar",
-            title: "SDE",
+            name: "John Doe",
+            title: "Designer",
             image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
             socials: [
                 { name: "Twitter", url: "https://twitter.com/" },
@@ -26,8 +26,8 @@ const Team = () => {
             ],
         },
         {
-            name: "Pradeeshwar",
-            title: "SDE",
+            name: "John Doe",
+            title: "Designer",
             image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
             socials: [
                 { name: "Twitter", url: "https://twitter.com/" },
@@ -36,8 +36,8 @@ const Team = () => {
             ],
         },
         {
-            name: "Pradeeshwar",
-            title: "SDE",
+            name: "John Doe",
+            title: "Designer",
             image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
             socials: [
                 { name: "Twitter", url: "https://twitter.com/" },
@@ -46,8 +46,8 @@ const Team = () => {
             ],
         },
         {
-            name: "Pradeeshwar",
-            title: "SDE",
+            name: "John Doe",
+            title: "Designer",
             image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
             socials: [
                 { name: "Twitter", url: "https://twitter.com/" },
@@ -56,8 +56,8 @@ const Team = () => {
             ],
         },
         {
-            name: "Pradeeshwar",
-            title: "SDE",
+            name: "John Doe",
+            title: "Designer",
             image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
             socials: [
                 { name: "Twitter", url: "https://twitter.com/" },
@@ -82,7 +82,7 @@ const Team = () => {
 
     const [ref, inView] = useInView({
         threshold: 0.5, // 50% of the element visible in viewport
-        triggerOnce: false, // Reset the animation each time the element comes into view
+        triggerOnce: true, // Reset the animation each time the element comes into view
     });
 
     return (
