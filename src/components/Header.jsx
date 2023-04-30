@@ -1,14 +1,13 @@
-// import Link from 'next/link'
+import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 
 const Header = () => {
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
-    const [textColor, setTextColor] = useState('black')
 
     const handleNav = () => {
         setNav(!nav)
@@ -18,10 +17,8 @@ const Header = () => {
         const changeColor = () => {
             if (window.scrollY >= 80) {
                 setColor('#ccc0ac')
-                setTextColor('#000')
             } else {
                 setColor('transparent')
-                setTextColor('black')
             }
         }
         window.addEventListener('scroll', changeColor)
@@ -31,15 +28,8 @@ const Header = () => {
     return (
         <header style={{ backgroundColor: `${color}` }} className='fixed top-0 left-0 w-full z-10 ease-in duration-300'>
             <div className='max-w-7xl m-auto flex justify-between items-center p-4 text-black'>
-                <Link
-                    activeClass="active"
-                    to="hero"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={200}
-                    className='cursor-pointer'
-                >
+                <Link href='/'>
+
                     <motion.div
                         initial={{
                             x: -500,
@@ -55,7 +45,7 @@ const Header = () => {
                             duration: 1.5
                         }}
                     >
-                        <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>Site</h1>
+                        <h1 className='font-bold text-4xl text-black'>Site</h1>
                     </motion.div>
                 </Link>
                 <motion.div
@@ -69,69 +59,29 @@ const Header = () => {
                         duration: 1.5
                     }}
                 >
-                    <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
+                    <ul className='hidden sm:flex text-black'>
                         <li className='p-4'>
-                            <Link
-                                activeClass="active"
-                                to="hero"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={200}
-                                className='cursor-pointer'
-                            >
+                            <Link href='/'>
                                 <h1>Home</h1>
                             </Link>
                         </li>
                         <li className='p-4'>
-                            <Link
-                                activeClass="active"
-                                to="about"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={200}
-                                className='cursor-pointer'
-                            >
+                            <Link href='/#about'>
                                 <h1>About</h1>
                             </Link>
                         </li>
                         <li className='p-4'>
-                            <Link
-                                activeClass="active"
-                                to="services"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={200}
-                                className='cursor-pointer'
-                            >
+                            <Link href='/#services'>
                                 <h1>Services</h1>
                             </Link>
                         </li>
                         <li className='p-4'>
-                            <Link
-                                activeClass="active"
-                                to="team"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={200}
-                                className='cursor-pointer'
-                            >
+                            <Link href='/#team'>
                                 <h1>Team</h1>
                             </Link>
                         </li>
                         <li className='p-4'>
-                            <Link
-                                activeClass="active"
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={200}
-                                className='cursor-pointer'
-                            >
+                            <Link href='/#contact'>
                                 <h1>Contact</h1>
                             </Link>
                         </li>
@@ -155,15 +105,15 @@ const Header = () => {
                     <SocialIcon
                         className='cursor-pointer'
                         network='email'
-                        fgColor={`${textColor}`}
+                        fgColor='#000'
                         bgColor='transparent'
                     />
-                    <p style={{ color: `${textColor}` }} className='uppercase hidden md:inline-flex text-flex text-black'>Get in Touch</p>
+                    <p className='uppercase hidden md:inline-flex text-flex text-black'>Get in Touch</p>
                 </motion.div>
                 {/* Mobile Button */}
-                <div className='block sm:hidden z-10'>
+                <div className='block sm:hidden z-30'>
                     {nav ? (
-                        <AiOutlineClose className='text-4xl' onClick={handleNav} />
+                        <AiOutlineClose className='text-4xl text-white' onClick={handleNav} />
                     ) : (
                         <motion.div
                             initial={{
@@ -180,40 +130,40 @@ const Header = () => {
                                 duration: 1.0
                             }}
                         >
-                            <AiOutlineMenu style={{ color: `${textColor}` }} className='text-4xl' onClick={handleNav} />
+                            <AiOutlineMenu className='text-4xl text-black' onClick={handleNav} />
                         </motion.div>
                     )
                     }
                 </div>
                 {/* Mobile Menu */}
                 <div className={nav
-                    ? 'sm:hidden absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-white text-center ease-in duration-300 z-50'
+                    ? 'sm:hidden absolute left-0 top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-white text-center ease-in duration-300 z-10'
                     :
-                    'sm:hidden absolute left-[-100%] top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-white text-center ease-in duration-300 z-50'
+                    'sm:hidden absolute left-[-100%] top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-white text-center ease-in duration-300 z-10'
                 }>
                     <ul>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/' >
+                            <Link href='/'>
                                 <h1>Home</h1>
                             </Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#about' >
+                            <Link href='/#about'>
                                 <h1>About</h1>
                             </Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#services' >
+                            <Link href='/#services'>
                                 <h1>Services</h1>
                             </Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#team' >
+                            <Link href='/#team'>
                                 <h1>Team</h1>
                             </Link>
                         </li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-                            <Link href='/#contact' >
+                            <Link href='/#contact'>
                                 <h1>Contact</h1>
                             </Link>
                         </li>
