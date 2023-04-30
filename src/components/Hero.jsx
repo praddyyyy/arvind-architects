@@ -11,7 +11,7 @@ const Hero = () => {
                 <p className='py-5 text-xl'>Crafting Dreams into Reality</p>
                 <button className='px-8 py-2 bg-[#8d7358] border border-[#8d7358] text-white hover:bg-transparent
                  hover:text-black hover:border hover:border-[#8d7358] ease-in duration-300 '>
-                    Get Started
+                    Book Now
                 </button>
             </div>
             {/* <div>
