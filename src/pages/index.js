@@ -6,7 +6,7 @@ import About from '@/components/About'
 import Team from '@/components/Team'
 import Contact from '@/components/Contact'
 import Services from '@/components/Services'
-import { Element } from 'react-scroll'
+// import { Element } from 'react-scroll'
 
 const raleway = Raleway({ subsets: ['latin'] })
 
@@ -22,21 +22,21 @@ export default function Home() {
       <main>
         <Header />
 
-        <Element name='hero'>
+        <section id='hero'>
           <Hero />
-        </Element>
-        <Element name='about'>
+        </section>
+        <section id='about'>
           <About />
-        </Element>
-        <Element name='services'>
+        </section>
+        <section id='services'>
           <Services />
-        </Element>
-        <Element name='team'>
+        </section>
+        <section id='team'>
           <Team />
-        </Element>
-        <Element name='contact'>
+        </section>
+        <section id='contact'>
           <Contact />
-        </Element>
+        </section>
       </main>
     </div>
   )
