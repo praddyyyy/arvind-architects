@@ -122,7 +122,7 @@ const Team = () => {
             <motion.div variants={containerVariants}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'} // animate only when in view 
-                className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:pt-[5rem] md:pt-[20rem] lg:pt-0 "
+                className="grid grid-cols-2 lg:grid-cols-3 gap-8 sm:pt-[5rem] md:pt-[20rem] lg:pt-0 "
             >
                 {members.map((member) => (
                     <motion.div
