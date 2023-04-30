@@ -98,7 +98,7 @@ const About = () => {
                 <div>
                     <p className='text-base text-justify'>
                         Our goal is to be a leader in the industry, and to do that, we prioritize innovation, sustainability, and excellence in all aspects of our
-                        work. We aim to exceed our clients' expectations by providing exceptional customer service, using the latest technologies and
+                        work. We aim to exceed our clients&apos; expectations by providing exceptional customer service, using the latest technologies and
                         materials, and staying up to date with the latest trends in interior design.
                     </p>
                     <p className='text-base mt-5 text-justify'>

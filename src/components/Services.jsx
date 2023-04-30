@@ -76,7 +76,7 @@ const Services = () => {
                     <p className="text-gray-700">
                         Our designers use 3D modeling and rendering
                         software to create realistic visualizations of your project, allowing you to see the design
-                        before it's even built.
+                        before it&apos;s even built.
                     </p>
                 </motion.div>
                 <motion.div className="border border-gray-300 p-6" variants={serviceVariants}>

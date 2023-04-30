@@ -112,7 +112,7 @@ const Team = () => {
                     highly skilled professionals with backgrounds in
                     interior design, architecture, and construction. With
                     their extensive experience, innovative thinking, and
-                    commitment to excellence, they're dedicated to
+                    commitment to excellence, they&apos;re dedicated to
                     bringing your vision to life and creating a space that
                     perfectly reflects your style and personality. Get to
                     know ourteam and discover how their expertise can
