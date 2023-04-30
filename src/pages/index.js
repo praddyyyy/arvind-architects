@@ -22,7 +22,7 @@ export default function Home() {
       <main>
         <Header />
 
-        <section id='hero'>
+        <section id='home'>
           <Hero />
         </section>
         <section id='about'>
