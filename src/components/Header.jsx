@@ -61,27 +61,27 @@ const Header = () => {
                 >
                     <ul className='hidden sm:flex text-black'>
                         <li className='p-4'>
-                            <Link href='/'>
+                            <Link href='/#home' scroll={false}>
                                 <h1>Home</h1>
                             </Link>
                         </li>
                         <li className='p-4'>
-                            <Link href='/#about'>
+                            <Link href='/#about' scroll={false}>
                                 <h1>About</h1>
                             </Link>
                         </li>
                         <li className='p-4'>
-                            <Link href='/#services'>
+                            <Link href='/#services' scroll={false}>
                                 <h1>Services</h1>
                             </Link>
                         </li>
                         <li className='p-4'>
-                            <Link href='/#team'>
+                            <Link href='/#team' scroll={false}>
                                 <h1>Team</h1>
                             </Link>
                         </li>
                         <li className='p-4'>
-                            <Link href='/#contact'>
+                            <Link href='/#contact' scroll={false}>
                                 <h1>Contact</h1>
                             </Link>
                         </li>
